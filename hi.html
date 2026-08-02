@@ -54,5 +54,34 @@
 <section class="max-w-3xl mx-auto px-4 py-20 text-center"><h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">एक पेशेवर उपकरण के लिए उचित मूल्य।</h2><p class="text-gray-500 mb-6">एक बार की खरीद, कोई आवर्ती लागत नहीं। आप इसे खरीदते हैं, आप इसके मालिक हैं — सभी भविष्य के अपडेट शामिल हैं। एक अच्छे हार्डवेयर की तरह, यह एक निवेश है, सदस्यता नहीं।</p><div class="inline-flex items-center gap-2 px-5 py-2 bg-purple-50 border border-purple-200 rounded-full text-sm font-medium text-purple-700">🏷️ प्रतिस्पर्धी एकमुश्त मूल्य</div></section>
 <section id="future" class="max-w-5xl mx-auto px-4 py-20"><div class="text-center fade-in"><h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">मल्टीट्रैक स्टूडियो संस्करण आ रहा है।</h2><p class="text-gray-500 max-w-2xl mx-auto mb-8">DeepStem Pro वर्तमान में स्वर और वाद्य निकालता है। हम एक समर्पित मल्टीट्रैक स्टूडियो संस्करण बना रहे हैं जो ड्रम, बास, पियानो और बहुत कुछ अलग करेगा। जो कोई भी अभी Pro खरीदता है, उसे लॉन्च होने पर विशेष अपग्रेड मिलेगा।</p><div class="inline-block px-5 py-2 bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-200 rounded-full text-sm font-medium text-purple-700">योजनाबद्ध: मल्टीट्रैक स्टूडियो संस्करण</div></div></section>
 <section class="max-w-5xl mx-auto px-4 py-20 border-t border-gray-200"><div class="grid md:grid-cols-2 gap-10 items-center"><div class="fade-in"><h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">डिवाइस पर AI, लोगों के लिए बनाया गया।</h2><p class="text-gray-500 leading-relaxed">DeepStem Pro सैंडबॉक्स्ड कोर AI की नई पीढ़ी से संबंधित है — सॉफ्टवेयर जो शक्तिशाली मशीन लर्निंग मॉडल को सीधे आपके कंप्यूटर पर चलाता है, बिना किसी क्लाउड निर्भरता के। यह एक उत्पाद है, प्लेटफ़ॉर्म नहीं। एक उपकरण, सेवा नहीं। यह वह है जो गोपनीयता-प्रथम, पेशेवर ऑडियो उपकरण दिखते हैं।</p></div><div class="grid grid-cols-2 gap-3 fade-in"><div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-xl">🔒</span><p class="text-xs font-medium mt-1">सैंडबॉक्स्ड</p></div><div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-xl">📴</span><p class="text-xs font-medium mt-1">100% ऑफ़लाइन</p></div><div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-xl">🧬</span><p class="text-xs font-medium mt-1">कोर AI इंजन</p></div><div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-xl">🎚️</span><p class="text-xs font-medium mt-1">पेशेवर स्टेम</p></div></div></div></section>
-<footer class="border-t border-gray-200 py-8 text-center"><p class="text-gray-500 text-sm">© 2026 DeepStem Pro. एक AI उपकरण जो गोपनीयता का सम्मान करता है।</p><p class="text-gray-400 text-xs mt-1">इस विश्वास पर निर्मित कि गोपनीयता और गुणवत्ता एक साथ चलते हैं।</p></footer>
+<section class="max-w-3xl mx-auto px-4 py-12 text-center">
+  <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
+  <form id="contactForm" class="max-w-md mx-auto space-y-4 text-left">
+    <div>
+      <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+      <input type="text" id="name" name="name" required class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2 shadow-sm focus:border-purple-500 focus:ring-purple-500" />
+    </div>
+    <div>
+      <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+      <input type="email" id="email" name="email" required class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2 shadow-sm focus:border-purple-500 focus:ring-purple-500" />
+    </div>
+    <div>
+      <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+      <textarea id="message" name="message" rows="4" required class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2 shadow-sm focus:border-purple-500 focus:ring-purple-500"></textarea>
+    </div>
+    <button type="submit" class="w-full px-6 py-3 bg-purple-600 text-white rounded-full font-medium hover:bg-purple-700 transition-colors">Send Message</button>
+  </form>
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var message = document.getElementById("message").value;
+      var subject = "DeepStem Pro contact from " + name;
+      var body = "Name: " + name + "\nEmail: " + email + "\n\n" + message;
+      window.location.href = "mailto:djkoast.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    });
+  </script>
+</section>
+<p class="text-gray-500 text-sm">© 2026 DeepStem Pro. एक AI उपकरण जो गोपनीयता का सम्मान करता है।</p><p class="text-gray-400 text-xs mt-1">इस विश्वास पर निर्मित कि गोपनीयता और गुणवत्ता एक साथ चलते हैं।</p></footer>
 <script>const obs=new IntersectionObserver((e)=>{e.forEach(i=>{if(i.isIntersecting)i.target.classList.add('visible')})},{threshold:.1});document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));</script></body></html>

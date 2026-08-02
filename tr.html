@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DeepStem Pro · Mac'inizde profesyonel vokal ve enstrüman ayrımı</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; background-color: #fafafa; color: #1e293b; }
+    .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .text-gradient { background: linear-gradient(135deg, #7c3aed, #2563eb); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .orb { position: absolute; border-radius: 50%; background: radial-gradient(circle at 30% 30%, rgba(124,58,237,0.06), rgba(37,99,235,0.04)); filter: blur(40px); z-index: -10; }
+    .orb-1 { width: 280px; height: 280px; top: -80px; left: -80px; }
+    .orb-2 { width: 200px; height: 200px; bottom: -60px; right: -60px; }
+    .orb-3 { width: 240px; height: 240px; top: 50%; left: 60%; transform: translate(-50%,-50%); }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased">
+  <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+        <div class="flex items-start justify-between">
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center gap-3">
+              <img src="deepstemwebsite.png" alt="DeepStem Pro logo" class="h-8 w-8 rounded-lg" />
+              <span class="text-xl font-bold text-gradient tracking-tight">DeepStem Pro</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <div class="flex flex-wrap gap-1">
+                <a href="en.html" class="text-xl hover:scale-110 transition-transform" title="English">🇬🇧</a>
+                <a href="el.html" class="text-xl hover:scale-110 transition-transform" title="Ελληνικά">🇬🇷</a>
+                <a href="sq.html" class="text-xl hover:scale-110 transition-transform" title="Shqip">🇦🇱</a>
+                <a href="ro.html" class="text-xl hover:scale-110 transition-transform" title="Română">🇷🇴</a>
+                <a href="pl.html" class="text-xl hover:scale-110 transition-transform" title="Polski">🇵🇱</a>
+                <a href="bg.html" class="text-xl hover:scale-110 transition-transform" title="Български">🇧🇬</a>
+                <a href="fr.html" class="text-xl hover:scale-110 transition-transform" title="Français">🇫🇷</a>
+                <a href="it.html" class="text-xl hover:scale-110 transition-transform" title="Italiano">🇮🇹</a>
+                <a href="es.html" class="text-xl hover:scale-110 transition-transform" title="Español">🇪🇸</a>
+                <a href="de.html" class="text-xl hover:scale-110 transition-transform" title="Deutsch">🇩🇪</a>
+                <a href="pt.html" class="text-xl hover:scale-110 transition-transform" title="Português">🇧🇷</a>
+              </div>
+              <div class="flex flex-wrap gap-1">
+                <a href="ar.html" class="text-xl hover:scale-110 transition-transform" title="العربية">🇪🇬</a>
+                <a href="tr.html" class="text-xl hover:scale-110 transition-transform" title="Türkçe">🇹🇷</a>
+                <a href="zh.html" class="text-xl hover:scale-110 transition-transform" title="中文">🇨🇳</a>
+                <a href="ja.html" class="text-xl hover:scale-110 transition-transform" title="日本語">🇯🇵</a>
+                <a href="uk.html" class="text-xl hover:scale-110 transition-transform" title="Українська">🇺🇦</a>
+                <a href="th.html" class="text-xl hover:scale-110 transition-transform" title="ไทย">🇹🇭</a>
+                <a href="id.html" class="text-xl hover:scale-110 transition-transform" title="Indonesia">🇮🇩</a>
+                <a href="tl.html" class="text-xl hover:scale-110 transition-transform" title="Tagalog">🇵🇭</a>
+                <a href="hi.html" class="text-xl hover:scale-110 transition-transform" title="हिन्दी">🇮🇳</a>
+                <a href="vi.html" class="text-xl hover:scale-110 transition-transform" title="Tiếng Việt">🇻🇳</a>
+                <a href="ko.html" class="text-xl hover:scale-110 transition-transform" title="한국어">🇰🇷</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-6 text-sm font-medium text-gray-600">
+            <a href="#overview" class="hover:text-purple-600">Overview</a>
+            <a href="#tech" class="hover:text-purple-600">Technology</a>
+            <a href="#quality" class="hover:text-purple-600">Quality</a>
+            <a href="#future" class="hover:text-purple-600">Future</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  <section class="relative px-4 pt-28 pb-24 overflow-hidden">
+    <div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div>
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <img src="deepstemwebsite.png" alt="DeepStem Pro" class="mx-auto h-24 w-24 mb-6 rounded-2xl shadow-lg" />
+      <div class="mb-4 inline-block px-3 py-1 bg-purple-50 border border-purple-200 rounded-full text-xs font-medium text-purple-700">macOS · Cihaz Üstü · Korumalı</div>
+      <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight">
+        <span class="text-gradient">Profesyonel vokal ve enstrüman ayrımı,</span><br/>
+        <span class="text-gray-800">tamamen Mac'inizde.</span>
+      </h1>
+      <p class="text-base md:text-lg text-gray-500 max-w-2xl mx-auto mb-8">
+        Herhangi bir parçadan temiz vokal ve enstrümantal çıkaran bağımsız bir dijital araç — internet bağlantısına asla ihtiyaç duymaz. Sadece bir dosya sürükleyin, yapay zeka size iki mükemmel şekilde ayrılmış parça verir.
+      </p>
+      <span class="inline-flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 shadow-sm rounded-full text-sm font-semibold text-gray-700 cursor-default">🎛️ Stüdyo kalitesinde parçalar, çevrimdışı.</span>
+    </div>
+  </section>
+
+  <section id="overview" class="max-w-6xl mx-auto px-4 py-20">
+    <div class="text-center mb-14">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">İş akışınıza ve gizliliğinize saygı duyan bir araç.</h2>
+      <p class="text-gray-500 max-w-2xl mx-auto">DeepStem Pro, ihtiyacı olan her şeyi tek bir uygulamada toplar. Abonelik yok, bulut yok, gizli maddeler yok. Bir kez satın alırsınız, Mac'inizde yaşar ve sonsuza kadar çalışır.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="fade-in bg-white border border-gray-100 shadow-sm rounded-2xl p-6 hover:shadow-md transition-shadow"><div class="text-2xl mb-3">🔐</div><h3 class="text-lg font-semibold mb-1 text-gray-800">Gerçekten Korumalı</h3><p class="text-sm text-gray-500">Apple'ın güvenlik korumalı alanı içinde çalışır. Sizin vermediğiniz hiçbir şeyi okuyamaz — ve asla internet erişimi istemez.</p></div>
+      <div class="fade-in bg-white border border-gray-100 shadow-sm rounded-2xl p-6 hover:shadow-md transition-shadow"><div class="text-2xl mb-3">🧬</div><h3 class="text-lg font-semibold mb-1 text-gray-800">Gerçek Yapay Zeka, Yerelde</h3><p class="text-sm text-gray-500">Dünya çapındaki araştırmacıların güvendiği aynı Demucs HTDemucs mimarisini kullanır — ancak doğrudan makinenizde, gecikme olmadan çalışır.</p></div>
+      <div class="fade-in bg-white border border-gray-100 shadow-sm rounded-2xl p-6 hover:shadow-md transition-shadow"><div class="text-2xl mb-3">🛡️</div><h3 class="text-lg font-semibold mb-1 text-gray-800">Sesiniz, Kendi İşiniz</h3><p class="text-sm text-gray-500">Hesap yok, telemetri yok. Yapay zeka her şeyi yerel olarak işler ve dışa aktarılan parçalar yalnızca size aittir.</p></div>
+    </div>
+  </section>
+
+  <section id="tech" class="max-w-6xl mx-auto px-4 py-20">
+    <div class="flex flex-col lg:flex-row gap-10 items-center">
+      <div class="flex-1 fade-in">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Derin öğrenme, basitleştirildi.</h2>
+        <p class="text-gray-500 leading-relaxed mb-4">Tam bir Python 3.12 ortamını, PyTorch'u ve resmi HTDemucs modelini tek bir uygulamaya paketledik. Terminal yok, yapılandırma yok — sadece DeepStem Pro'yu açın ve ayırmaya başlayın.</p>
+        <p class="text-gray-500 leading-relaxed">Model stereo sesi doğal olarak işler, orijinal sıcaklığı ve derinliği korur. CD kalitesini ve 48 kHz'e kadar yüksek çözünürlüklü dosyaları destekler, size tam olarak kaynak gibi ses veren vokal ve enstrümantal sunar.</p>
+      </div>
+      <div class="grid grid-cols-2 gap-3 flex-1 fade-in">
+        <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-2xl">🐍</span><p class="text-xs font-medium mt-1">Python 3.12</p></div>
+        <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-2xl">🔥</span><p class="text-xs font-medium mt-1">PyTorch</p></div>
+        <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-2xl">🧠</span><p class="text-xs font-medium mt-1">HTDemucs</p></div>
+        <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-2xl">🍎</span><p class="text-xs font-medium mt-1">SwiftUI + Metal</p></div>
+        <div class="col-span-2 bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-2xl">🔒</span><p class="text-xs font-medium mt-1">Korumalı · Çevrimdışı · Özel</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quality" class="max-w-5xl mx-auto px-4 py-20">
+    <div class="text-center fade-in">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Farkı hemen duyacaksınız.</h2>
+      <p class="text-gray-500 max-w-2xl mx-auto mb-10">Ayrım temiz, müzikal ve şeffaf. Vokaller dolgun ve mevcut, enstrümantal zengin ve bozulmamış — artefakt yok, boş sesler yok, dijital sertlik yok. Tüm kütüphanenizi yeniden mikslemek isteyeceğiniz türden bir kalite.</p>
+      <div class="flex justify-center gap-4 flex-wrap text-sm font-medium text-gray-700">
+        <div class="bg-white border border-gray-100 rounded-xl p-4 shadow-sm w-32"><span class="text-xl">🎤</span><p class="mt-1">Vokal</p></div>
+        <div class="bg-white border border-gray-100 rounded-xl p-4 shadow-sm w-32"><span class="text-xl">🎸</span><p class="mt-1">Enstrümantal</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-3xl mx-auto px-4 py-20 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Profesyonel bir araç için adil bir fiyat.</h2>
+    <p class="text-gray-500 mb-6">Tek seferlik satın alma, yinelenen maliyet yok. Satın alırsınız, sahip olursunuz — gelecekteki tüm güncellemeler dahil. İyi bir donanım gibi, bu bir yatırımdır, abonelik değil.</p>
+    <div class="inline-flex items-center gap-2 px-5 py-2 bg-purple-50 border border-purple-200 rounded-full text-sm font-medium text-purple-700">🏷️ Rekabetçi tek seferlik fiyat</div>
+  </section>
+
+  <section id="future" class="max-w-5xl mx-auto px-4 py-20">
+    <div class="text-center fade-in">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Multitrack Studio Sürümü geliyor.</h2>
+      <p class="text-gray-500 max-w-2xl mx-auto mb-8">DeepStem Pro şu anda vokal ve enstrümantal çıkarıyor. Davul, bas, piyano ve daha fazlasını ayıracak özel bir Multitrack Studio Sürümü inşa ediyoruz. Şimdi Pro satın alan herkes, çıktığında özel bir yükseltme alacak.</p>
+      <div class="inline-block px-5 py-2 bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-200 rounded-full text-sm font-medium text-purple-700">Planlanan: Multitrack Studio Sürümü</div>
+    </div>
+  </section>
+
+  <section class="max-w-5xl mx-auto px-4 py-20 border-t border-gray-200">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div class="fade-in"><h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Cihaz üstü yapay zeka, insanlar için yapıldı.</h2><p class="text-gray-500 leading-relaxed">DeepStem Pro, bulut bağımlılığı olmadan güçlü makine öğrenimi modellerini doğrudan bilgisayarınızda çalıştıran yeni nesil Sandboxed Core AI'ya aittir. Bu bir üründür, platform değil. Bir araçtır, hizmet değil. Gizliliğe saygı duyan profesyonel ses araçları böyle görünür.</p></div>
+      <div class="grid grid-cols-2 gap-3 fade-in">
+        <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-xl">🔒</span><p class="text-xs font-medium mt-1">Korumalı</p></div>
+        <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-xl">📴</span><p class="text-xs font-medium mt-1">%100 Çevrimdışı</p></div>
+        <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-xl">🧬</span><p class="text-xs font-medium mt-1">Çekirdek Yapay Zeka Motoru</p></div>
+        <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-xl">🎚️</span><p class="text-xs font-medium mt-1">Profesyonel Parçalar</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-gray-200 py-8 text-center">
+    <p class="text-gray-500 text-sm">© 2026 DeepStem Pro. Gizliliğe saygı duyan bir yapay zeka aracı.</p>
+    <p class="text-gray-400 text-xs mt-1">Gizlilik ve kalitenin birlikte yürüdüğü inancıyla inşa edilmiştir.</p>
+  </footer>
+  <script>const obs=new IntersectionObserver((e)=>{e.forEach(i=>{if(i.isIntersecting)i.target.classList.add('visible')})},{threshold:0.1});document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));</script>
+</body>
+</html>

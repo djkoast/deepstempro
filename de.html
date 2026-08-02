@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DeepStem Pro · Professionelle Gesangs‑ und Instrumententrennung auf deinem Mac</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; background-color: #fafafa; color: #1e293b; }
+    .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .text-gradient { background: linear-gradient(135deg, #7c3aed, #2563eb); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .orb { position: absolute; border-radius: 50%; background: radial-gradient(circle at 30% 30%, rgba(124,58,237,0.06), rgba(37,99,235,0.04)); filter: blur(40px); z-index: -10; }
+    .orb-1 { width: 280px; height: 280px; top: -80px; left: -80px; }
+    .orb-2 { width: 200px; height: 200px; bottom: -60px; right: -60px; }
+    .orb-3 { width: 240px; height: 240px; top: 50%; left: 60%; transform: translate(-50%,-50%); }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased">
+  <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+        <div class="flex items-start justify-between">
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center gap-3">
+              <img src="deepstemwebsite.png" alt="DeepStem Pro logo" class="h-8 w-8 rounded-lg" />
+              <span class="text-xl font-bold text-gradient tracking-tight">DeepStem Pro</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <div class="flex flex-wrap gap-1">
+                <a href="en.html" class="text-xl hover:scale-110 transition-transform" title="English">🇬🇧</a>
+                <a href="el.html" class="text-xl hover:scale-110 transition-transform" title="Ελληνικά">🇬🇷</a>
+                <a href="sq.html" class="text-xl hover:scale-110 transition-transform" title="Shqip">🇦🇱</a>
+                <a href="ro.html" class="text-xl hover:scale-110 transition-transform" title="Română">🇷🇴</a>
+                <a href="pl.html" class="text-xl hover:scale-110 transition-transform" title="Polski">🇵🇱</a>
+                <a href="bg.html" class="text-xl hover:scale-110 transition-transform" title="Български">🇧🇬</a>
+                <a href="fr.html" class="text-xl hover:scale-110 transition-transform" title="Français">🇫🇷</a>
+                <a href="it.html" class="text-xl hover:scale-110 transition-transform" title="Italiano">🇮🇹</a>
+                <a href="es.html" class="text-xl hover:scale-110 transition-transform" title="Español">🇪🇸</a>
+                <a href="de.html" class="text-xl hover:scale-110 transition-transform" title="Deutsch">🇩🇪</a>
+                <a href="pt.html" class="text-xl hover:scale-110 transition-transform" title="Português">🇧🇷</a>
+              </div>
+              <div class="flex flex-wrap gap-1">
+                <a href="ar.html" class="text-xl hover:scale-110 transition-transform" title="العربية">🇪🇬</a>
+                <a href="tr.html" class="text-xl hover:scale-110 transition-transform" title="Türkçe">🇹🇷</a>
+                <a href="zh.html" class="text-xl hover:scale-110 transition-transform" title="中文">🇨🇳</a>
+                <a href="ja.html" class="text-xl hover:scale-110 transition-transform" title="日本語">🇯🇵</a>
+                <a href="uk.html" class="text-xl hover:scale-110 transition-transform" title="Українська">🇺🇦</a>
+                <a href="th.html" class="text-xl hover:scale-110 transition-transform" title="ไทย">🇹🇭</a>
+                <a href="id.html" class="text-xl hover:scale-110 transition-transform" title="Indonesia">🇮🇩</a>
+                <a href="tl.html" class="text-xl hover:scale-110 transition-transform" title="Tagalog">🇵🇭</a>
+                <a href="hi.html" class="text-xl hover:scale-110 transition-transform" title="हिन्दी">🇮🇳</a>
+                <a href="vi.html" class="text-xl hover:scale-110 transition-transform" title="Tiếng Việt">🇻🇳</a>
+                <a href="ko.html" class="text-xl hover:scale-110 transition-transform" title="한국어">🇰🇷</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-6 text-sm font-medium text-gray-600">
+            <a href="#overview" class="hover:text-purple-600">Overview</a>
+            <a href="#tech" class="hover:text-purple-600">Technology</a>
+            <a href="#quality" class="hover:text-purple-600">Quality</a>
+            <a href="#future" class="hover:text-purple-600">Future</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  <section class="relative px-4 pt-28 pb-24 overflow-hidden">
+    <div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div>
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <img src="deepstemwebsite.png" alt="DeepStem Pro" class="mx-auto h-24 w-24 mb-6 rounded-2xl shadow-lg" />
+      <div class="mb-4 inline-block px-3 py-1 bg-purple-50 border border-purple-200 rounded-full text-xs font-medium text-purple-700">macOS · On‑Device · Sandboxed</div>
+      <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight">
+        <span class="text-gradient">Professionelle Gesangs‑ &amp; Instrumententrennung,</span><br/>
+        <span class="text-gray-800">komplett auf deinem Mac.</span>
+      </h1>
+      <p class="text-base md:text-lg text-gray-500 max-w-2xl mx-auto mb-8">
+        Ein eigenständiges digitales Werkzeug, das saubere Vocals und Instrumentals aus jedem Track extrahiert – ohne jemals das Internet zu benötigen. Zieh einfach eine Datei rein und die KI liefert dir zwei perfekt getrennte Stems.
+      </p>
+      <span class="inline-flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 shadow-sm rounded-full text-sm font-semibold text-gray-700 cursor-default">🎛️ Studio‑Stems, offline.</span>
+    </div>
+  </section>
+
+  <section id="overview" class="max-w-6xl mx-auto px-4 py-20">
+    <div class="text-center mb-14">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Ein Werkzeug, das deinen Workflow respektiert – und deine Privatsphäre.</h2>
+      <p class="text-gray-500 max-w-2xl mx-auto">DeepStem Pro bündelt alles, was es braucht, in einer einzigen App. Keine Abos, keine Cloud, kein Kleingedrucktes. Einmal kaufen, es lebt auf deinem Mac und funktioniert für immer.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="fade-in bg-white border border-gray-100 shadow-sm rounded-2xl p-6 hover:shadow-md transition-shadow"><div class="text-2xl mb-3">🔐</div><h3 class="text-lg font-semibold mb-1 text-gray-800">Wirklich Sandboxed</h3><p class="text-sm text-gray-500">Läuft in Apples Sicherheits‑Sandbox. Es kann nichts lesen, was du ihm nicht gibst – und verlangt niemals Internetzugriff.</p></div>
+      <div class="fade-in bg-white border border-gray-100 shadow-sm rounded-2xl p-6 hover:shadow-md transition-shadow"><div class="text-2xl mb-3">🧬</div><h3 class="text-lg font-semibold mb-1 text-gray-800">Echte KI, lokal</h3><p class="text-sm text-gray-500">Nutzt dieselbe Demucs‑HTDemucs‑Architektur, der Forscher weltweit vertrauen – läuft aber direkt auf deinem Mac, ohne Latenz.</p></div>
+      <div class="fade-in bg-white border border-gray-100 shadow-sm rounded-2xl p-6 hover:shadow-md transition-shadow"><div class="text-2xl mb-3">🛡️</div><h3 class="text-lg font-semibold mb-1 text-gray-800">Dein Audio, deine Sache</h3><p class="text-sm text-gray-500">Keine Accounts, keine Telemetrie. Die KI verarbeitet alles lokal und die exportierten Stems gehören nur dir.</p></div>
+    </div>
+  </section>
+
+  <section id="tech" class="max-w-6xl mx-auto px-4 py-20">
+    <div class="flex flex-col lg:flex-row gap-10 items-center">
+      <div class="flex-1 fade-in">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Deep Learning, einfach gemacht.</h2>
+        <p class="text-gray-500 leading-relaxed mb-4">Wir haben eine komplette Python‑3.12‑Umgebung, PyTorch und das offizielle HTDemucs‑Modell in eine einzige App gepackt. Kein Terminal, keine Konfiguration – einfach DeepStem Pro öffnen und mit dem Trennen beginnen.</p>
+        <p class="text-gray-500 leading-relaxed">Das Modell verarbeitet Stereo‑Audio nativ und bewahrt die ursprüngliche Wärme und Tiefe. Es unterstützt CD‑Qualität und hochauflösende Dateien bis 48 kHz und liefert Vocals und Instrumentals, die exakt wie die Quelle klingen.</p>
+      </div>
+      <div class="grid grid-cols-2 gap-3 flex-1 fade-in">
+        <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-2xl">🐍</span><p class="text-xs font-medium mt-1">Python 3.12</p></div>
+        <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-2xl">🔥</span><p class="text-xs font-medium mt-1">PyTorch</p></div>
+        <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-2xl">🧠</span><p class="text-xs font-medium mt-1">HTDemucs</p></div>
+        <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-2xl">🍎</span><p class="text-xs font-medium mt-1">SwiftUI + Metal</p></div>
+        <div class="col-span-2 bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-2xl">🔒</span><p class="text-xs font-medium mt-1">Sandboxed · Offline · Privat</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quality" class="max-w-5xl mx-auto px-4 py-20">
+    <div class="text-center fade-in">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Du wirst den Unterschied sofort hören.</h2>
+      <p class="text-gray-500 max-w-2xl mx-auto mb-10">Die Trennung ist sauber, musikalisch und transparent. Die Vocals klingen voll und präsent, das Instrumental ist satt und intakt – keine Artefakte, keine hohlen Klänge, keine digitale Härte. Es ist die Art von Qualität, die dich dazu bringt, deine gesamte Bibliothek neu abzumischen.</p>
+      <div class="flex justify-center gap-4 flex-wrap text-sm font-medium text-gray-700">
+        <div class="bg-white border border-gray-100 rounded-xl p-4 shadow-sm w-32"><span class="text-xl">🎤</span><p class="mt-1">Vocals</p></div>
+        <div class="bg-white border border-gray-100 rounded-xl p-4 shadow-sm w-32"><span class="text-xl">🎸</span><p class="mt-1">Instrumental</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-3xl mx-auto px-4 py-20 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Ein fairer Preis für ein professionelles Werkzeug.</h2>
+    <p class="text-gray-500 mb-6">Einmalkauf, keine wiederkehrenden Kosten. Du kaufst es, du besitzt es – alle zukünftigen Updates inklusive. Wie gute Hardware ist es eine Investition, kein Abo.</p>
+    <div class="inline-flex items-center gap-2 px-5 py-2 bg-purple-50 border border-purple-200 rounded-full text-sm font-medium text-purple-700">🏷️ Wettbewerbsfähiger Einmalpreis</div>
+  </section>
+
+  <section id="future" class="max-w-5xl mx-auto px-4 py-20">
+    <div class="text-center fade-in">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Die Multitrack Studio Edition kommt.</h2>
+      <p class="text-gray-500 max-w-2xl mx-auto mb-8">DeepStem Pro extrahiert derzeit Vocals und Instrumentals. Wir bauen eine spezielle Multitrack Studio Edition, die Drums, Bass, Piano und mehr trennen wird. Wer jetzt Pro kauft, erhält ein spezielles Upgrade, wenn sie erscheint.</p>
+      <div class="inline-block px-5 py-2 bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-200 rounded-full text-sm font-medium text-purple-700">Geplant: Multitrack Studio Edition</div>
+    </div>
+  </section>
+
+  <section class="max-w-5xl mx-auto px-4 py-20 border-t border-gray-200">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div class="fade-in"><h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">On‑Device KI, gemacht für Menschen.</h2><p class="text-gray-500 leading-relaxed">DeepStem Pro gehört zur neuen Generation der Sandboxed Core AI – Software, die leistungsstarke Machine‑Learning‑Modelle direkt auf deinem Computer ausführt, ohne Cloud‑Abhängigkeit. Es ist ein Produkt, keine Plattform. Ein Werkzeug, kein Service. So sehen professionelle Audio‑Tools aus, die die Privatsphäre respektieren.</p></div>
+      <div class="grid grid-cols-2 gap-3 fade-in">
+        <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-xl">🔒</span><p class="text-xs font-medium mt-1">Sandboxed</p></div>
+        <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-xl">📴</span><p class="text-xs font-medium mt-1">100% Offline</p></div>
+        <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-xl">🧬</span><p class="text-xs font-medium mt-1">Core‑KI‑Engine</p></div>
+        <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-xl">🎚️</span><p class="text-xs font-medium mt-1">Professionelle Stems</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-gray-200 py-8 text-center">
+    <p class="text-gray-500 text-sm">© 2026 DeepStem Pro. Ein KI‑Tool, das die Privatsphäre respektiert.</p>
+    <p class="text-gray-400 text-xs mt-1">Gebaut auf der Überzeugung, dass Privatsphäre und Qualität zusammengehören.</p>
+  </footer>
+  <script>const obs=new IntersectionObserver((e)=>{e.forEach(i=>{if(i.isIntersecting)i.target.classList.add('visible')})},{threshold:0.1});document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));</script>
+</body>
+</html>

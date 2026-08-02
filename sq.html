@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="sq" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DeepStem Pro · Ndarje profesionale e vokalit dhe instrumenteve në Mac-in tuaj</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; background-color: #fafafa; color: #1e293b; }
+    .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .text-gradient { background: linear-gradient(135deg, #7c3aed, #2563eb); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .orb { position: absolute; border-radius: 50%; background: radial-gradient(circle at 30% 30%, rgba(124,58,237,0.06), rgba(37,99,235,0.04)); filter: blur(40px); z-index: -10; }
+    .orb-1 { width: 280px; height: 280px; top: -80px; left: -80px; }
+    .orb-2 { width: 200px; height: 200px; bottom: -60px; right: -60px; }
+    .orb-3 { width: 240px; height: 240px; top: 50%; left: 60%; transform: translate(-50%,-50%); }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased">
+  <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+        <div class="flex items-start justify-between">
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center gap-3">
+              <img src="deepstemwebsite.png" alt="DeepStem Pro logo" class="h-8 w-8 rounded-lg" />
+              <span class="text-xl font-bold text-gradient tracking-tight">DeepStem Pro</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <div class="flex flex-wrap gap-1">
+                <a href="en.html" class="text-xl hover:scale-110 transition-transform" title="English">🇬🇧</a>
+                <a href="el.html" class="text-xl hover:scale-110 transition-transform" title="Ελληνικά">🇬🇷</a>
+                <a href="sq.html" class="text-xl hover:scale-110 transition-transform" title="Shqip">🇦🇱</a>
+                <a href="ro.html" class="text-xl hover:scale-110 transition-transform" title="Română">🇷🇴</a>
+                <a href="pl.html" class="text-xl hover:scale-110 transition-transform" title="Polski">🇵🇱</a>
+                <a href="bg.html" class="text-xl hover:scale-110 transition-transform" title="Български">🇧🇬</a>
+                <a href="fr.html" class="text-xl hover:scale-110 transition-transform" title="Français">🇫🇷</a>
+                <a href="it.html" class="text-xl hover:scale-110 transition-transform" title="Italiano">🇮🇹</a>
+                <a href="es.html" class="text-xl hover:scale-110 transition-transform" title="Español">🇪🇸</a>
+                <a href="de.html" class="text-xl hover:scale-110 transition-transform" title="Deutsch">🇩🇪</a>
+                <a href="pt.html" class="text-xl hover:scale-110 transition-transform" title="Português">🇧🇷</a>
+              </div>
+              <div class="flex flex-wrap gap-1">
+                <a href="ar.html" class="text-xl hover:scale-110 transition-transform" title="العربية">🇪🇬</a>
+                <a href="tr.html" class="text-xl hover:scale-110 transition-transform" title="Türkçe">🇹🇷</a>
+                <a href="zh.html" class="text-xl hover:scale-110 transition-transform" title="中文">🇨🇳</a>
+                <a href="ja.html" class="text-xl hover:scale-110 transition-transform" title="日本語">🇯🇵</a>
+                <a href="uk.html" class="text-xl hover:scale-110 transition-transform" title="Українська">🇺🇦</a>
+                <a href="th.html" class="text-xl hover:scale-110 transition-transform" title="ไทย">🇹🇭</a>
+                <a href="id.html" class="text-xl hover:scale-110 transition-transform" title="Indonesia">🇮🇩</a>
+                <a href="tl.html" class="text-xl hover:scale-110 transition-transform" title="Tagalog">🇵🇭</a>
+                <a href="hi.html" class="text-xl hover:scale-110 transition-transform" title="हिन्दी">🇮🇳</a>
+                <a href="vi.html" class="text-xl hover:scale-110 transition-transform" title="Tiếng Việt">🇻🇳</a>
+                <a href="ko.html" class="text-xl hover:scale-110 transition-transform" title="한국어">🇰🇷</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-6 text-sm font-medium text-gray-600">
+            <a href="#overview" class="hover:text-purple-600">Overview</a>
+            <a href="#tech" class="hover:text-purple-600">Technology</a>
+            <a href="#quality" class="hover:text-purple-600">Quality</a>
+            <a href="#future" class="hover:text-purple-600">Future</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  <section class="relative px-4 pt-28 pb-24 overflow-hidden">
+    <div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div>
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <img src="deepstemwebsite.png" alt="DeepStem Pro" class="mx-auto h-24 w-24 mb-6 rounded-2xl shadow-lg" />
+      <div class="mb-4 inline-block px-3 py-1 bg-purple-50 border border-purple-200 rounded-full text-xs font-medium text-purple-700">macOS · Në pajisje · I sandboxuar</div>
+      <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight">
+        <span class="text-gradient">Ndarje profesionale e vokalit dhe instrumenteve,</span><br/>
+        <span class="text-gray-800">tërësisht në Mac-in tuaj.</span>
+      </h1>
+      <p class="text-base md:text-lg text-gray-500 max-w-2xl mx-auto mb-8">
+        Një mjet dixhital i pavarur që nxjerr vokal të pastër dhe instrumental nga çdo këngë — pa pasur nevojë për internet. Thjesht tërhiqni një skedar dhe AI ju jep dy stem të ndara në mënyrë perfekte.
+      </p>
+      <span class="inline-flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 shadow-sm rounded-full text-sm font-semibold text-gray-700 cursor-default">🎛️ Stem cilësi studioje, offline.</span>
+    </div>
+  </section>
+  <section id="overview" class="max-w-6xl mx-auto px-4 py-20">
+    <div class="text-center mb-14">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Një mjet që respekton rrjedhën tuaj të punës — dhe privatësinë tuaj.</h2>
+      <p class="text-gray-500 max-w-2xl mx-auto">DeepStem Pro paketon gjithçka që i nevojitet në një aplikacion të vetëm. Pa abonime, pa re, pa shkronja të imëta. E blini një herë, jeton në Mac-in tuaj dhe funksionon përgjithmonë.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="fade-in bg-white border border-gray-100 shadow-sm rounded-2xl p-6 hover:shadow-md transition-shadow"><div class="text-2xl mb-3">🔐</div><h3 class="text-lg font-semibold mb-1 text-gray-800">Vërtet i Sandboxuar</h3><p class="text-sm text-gray-500">Ekzekutohet brenda sandbox-it të sigurisë së Apple. Nuk mund të lexojë asgjë që nuk i jepni — dhe nuk kërkon kurrë qasje në internet.</p></div>
+      <div class="fade-in bg-white border border-gray-100 shadow-sm rounded-2xl p-6 hover:shadow-md transition-shadow"><div class="text-2xl mb-3">🧬</div><h3 class="text-lg font-semibold mb-1 text-gray-800">AI i vërtetë, lokal</h3><p class="text-sm text-gray-500">Përdor të njëjtën arkitekturë Demucs HTDemucs që studiuesit në mbarë botën besojnë — por funksionon drejtpërdrejt në makinën tuaj, pa vonesë.</p></div>
+      <div class="fade-in bg-white border border-gray-100 shadow-sm rounded-2xl p-6 hover:shadow-md transition-shadow"><div class="text-2xl mb-3">🛡️</div><h3 class="text-lg font-semibold mb-1 text-gray-800">Audio juaj, puna juaj</h3><p class="text-sm text-gray-500">Pa llogari, pa telemetri. AI përpunon gjithçka lokalisht dhe stem-et e eksportuara i përkasin vetëm juve.</p></div>
+    </div>
+  </section>
+  <section id="tech" class="max-w-6xl mx-auto px-4 py-20">
+    <div class="flex flex-col lg:flex-row gap-10 items-center">
+      <div class="flex-1 fade-in">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Mësim i thellë, i thjeshtuar.</h2>
+        <p class="text-gray-500 leading-relaxed mb-4">Ne kemi paketuar një mjedis të plotë Python 3.12, PyTorch dhe modelin zyrtar HTDemucs në një aplikacion të vetëm. Pa terminal, pa konfigurim — hapni DeepStem Pro dhe filloni ndarjen.</p>
+        <p class="text-gray-500 leading-relaxed">Modeli përpunon audio stereo në mënyrë natyrale, duke ruajtur ngrohtësinë dhe thellësinë origjinale. Ai mbështet cilësinë CD dhe skedarë me rezolucion të lartë deri në 48 kHz, duke ju dhënë vokal dhe instrumental që tingëllojnë saktësisht si burimi.</p>
+      </div>
+      <div class="grid grid-cols-2 gap-3 flex-1 fade-in">
+        <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-2xl">🐍</span><p class="text-xs font-medium mt-1">Python 3.12</p></div>
+        <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-2xl">🔥</span><p class="text-xs font-medium mt-1">PyTorch</p></div>
+        <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-2xl">🧠</span><p class="text-xs font-medium mt-1">HTDemucs</p></div>
+        <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-2xl">🍎</span><p class="text-xs font-medium mt-1">SwiftUI + Metal</p></div>
+        <div class="col-span-2 bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-2xl">🔒</span><p class="text-xs font-medium mt-1">I sandboxuar · Offline · Privat</p></div>
+      </div>
+    </div>
+  </section>
+  <section id="quality" class="max-w-5xl mx-auto px-4 py-20">
+    <div class="text-center fade-in">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Do ta dëgjoni ndryshimin menjëherë.</h2>
+      <p class="text-gray-500 max-w-2xl mx-auto mb-10">Ndarja është e pastër, muzikore dhe transparente. Vokali tingëllon i plotë dhe i pranishëm, instrumentali është i pasur dhe i paprekur — pa artefakte, pa tinguj të zbrazët, pa ashpërsi dixhitale. Është lloji i cilësisë që ju bën të dëshironi të remiksoni të gjithë bibliotekën tuaj.</p>
+      <div class="flex justify-center gap-4 flex-wrap text-sm font-medium text-gray-700">
+        <div class="bg-white border border-gray-100 rounded-xl p-4 shadow-sm w-32"><span class="text-xl">🎤</span><p class="mt-1">Vokal</p></div>
+        <div class="bg-white border border-gray-100 rounded-xl p-4 shadow-sm w-32"><span class="text-xl">🎸</span><p class="mt-1">Instrumental</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="max-w-3xl mx-auto px-4 py-20 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Një çmim i drejtë për një mjet profesional.</h2>
+    <p class="text-gray-500 mb-6">Blerje një herë, pa kosto të përsëritura. E blini, e zotëroni — të gjitha përditësimet e ardhshme të përfshira. Si një pajisje e mirë, është një investim, jo një abonim.</p>
+    <div class="inline-flex items-center gap-2 px-5 py-2 bg-purple-50 border border-purple-200 rounded-full text-sm font-medium text-purple-700">🏷️ Çmim konkurrues një herë</div>
+  </section>
+  <section id="future" class="max-w-5xl mx-auto px-4 py-20">
+    <div class="text-center fade-in">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Edicioni Multitrack Studio po vjen.</h2>
+      <p class="text-gray-500 max-w-2xl mx-auto mb-8">DeepStem Pro aktualisht nxjerr vokal dhe instrumental. Ne po ndërtojmë një edicion të dedikuar Multitrack Studio që do të ndajë bateri, bas, piano dhe më shumë. Kushdo që blen Pro tani do të marrë një përmirësim special kur të dalë.</p>
+      <div class="inline-block px-5 py-2 bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-200 rounded-full text-sm font-medium text-purple-700">Planifikuar: Edicioni Multitrack Studio</div>
+    </div>
+  </section>
+  <section class="max-w-5xl mx-auto px-4 py-20 border-t border-gray-200">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div class="fade-in"><h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">AI në pajisje, i bërë për njerëzit.</h2><p class="text-gray-500 leading-relaxed">DeepStem Pro i përket gjeneratës së re të Sandboxed Core AI — softuer që ekzekuton modele të fuqishme të mësimit të makinerive drejtpërdrejt në kompjuterin tuaj, pa varësi nga cloud. Është një produkt, jo një platformë. Një mjet, jo një shërbim. Kështu duken mjetet profesionale audio që respektojnë privatësinë.</p></div>
+      <div class="grid grid-cols-2 gap-3 fade-in">
+        <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-xl">🔒</span><p class="text-xs font-medium mt-1">I sandboxuar</p></div>
+        <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-xl">📴</span><p class="text-xs font-medium mt-1">100% Offline</p></div>
+        <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-xl">🧬</span><p class="text-xs font-medium mt-1">Motor AI thelbësor</p></div>
+        <div class="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm"><span class="text-xl">🎚️</span><p class="text-xs font-medium mt-1">Stem profesionalë</p></div>
+      </div>
+    </div>
+  </section>
+  <footer class="border-t border-gray-200 py-8 text-center">
+    <p class="text-gray-500 text-sm">© 2026 DeepStem Pro. Një mjet AI që respekton privatësinë.</p>
+    <p class="text-gray-400 text-xs mt-1">Ndërtuar mbi bindjen se privatësia dhe cilësia shkojnë dorë për dore.</p>
+  </footer>
+  <script>const obs=new IntersectionObserver((e)=>{e.forEach(i=>{if(i.isIntersecting)i.target.classList.add('visible')})},{threshold:0.1});document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));</script>
+</body>
+</html>

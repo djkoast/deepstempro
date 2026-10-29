@@ -1,3 +1,4 @@
+cat > ~/Desktop/deepstem-seo/index.html << 'EOF'
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +12,17 @@
     .flag-btn { transition: transform 0.2s ease, box-shadow 0.2s ease; }
     .flag-btn:hover { transform: scale(1.05); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04); }
   </style>
+
+  <!-- Language Redirect Logic -->
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const lang = urlParams.get('lang');
+    
+    if (lang && lang !== 'en') {
+      // Redirect to the specific language page (e.g., el.html)
+      window.location.href = lang + '.html';
+    }
+  </script>
 </head>
 <body class="min-h-screen flex items-center justify-center px-4">
   <div class="text-center">
@@ -50,3 +62,5 @@
   </div>
 </body>
 </html>
+EOF
+open ~/Desktop/deepstem-seo

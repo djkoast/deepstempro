@@ -1,63 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DeepStem Pro · Professional Stem Separation</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-    body { font-family: 'Inter', sans-serif; background: #fafafa; }
-    .flag-btn { transition: transform 0.2s ease, box-shadow 0.2s ease; }
-    .flag-btn:hover { transform: scale(1.05); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04); }
-  </style>
-
-  <!-- Language Redirect Logic -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting to DeepStem Pro...</title>
+  
+  <!-- Instant Meta Refresh Redirect -->
+  <meta http-equiv="refresh" content="0; url=https://deepstem.hermeneialabs.co.uk">
+  
+  <!-- JavaScript Fallback Redirect -->
   <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const lang = urlParams.get('lang');
-    
-    if (lang && lang !== 'en') {
-      // Redirect to the specific language page (e.g., el.html)
-      window.location.href = lang + '.html';
-    }
+    window.location.href = "https://deepstem.hermeneialabs.co.uk";
   </script>
 </head>
-<body class="min-h-screen flex items-center justify-center px-4">
-  <div class="text-center">
-    <img src="deepstemwebsite.png" alt="DeepStem Pro logo" class="mx-auto h-24 w-24 mb-8 rounded-2xl shadow-lg" />
-    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4">DeepStem Pro</h1>
-    <p class="text-lg text-gray-500 mb-10 max-w-md mx-auto">Professional vocal &amp; instrumental separation, entirely on your Mac.</p>
-    <div class="flex flex-col gap-4">
-      <!-- Row 1 -->
-      <div class="flex flex-wrap justify-center gap-3">
-        <a href="en.html" class="flag-btn flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-2xl shadow-sm text-lg font-semibold text-gray-700 hover:border-purple-300">🇬🇧 English</a>
-        <a href="el.html" class="flag-btn flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-2xl shadow-sm text-lg font-semibold text-gray-700 hover:border-purple-300">🇬🇷 Ελληνικά</a>
-        <a href="sq.html" class="flag-btn flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-2xl shadow-sm text-lg font-semibold text-gray-700 hover:border-purple-300">🇦🇱 Shqip</a>
-        <a href="ro.html" class="flag-btn flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-2xl shadow-sm text-lg font-semibold text-gray-700 hover:border-purple-300">🇷🇴 Română</a>
-        <a href="pl.html" class="flag-btn flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-2xl shadow-sm text-lg font-semibold text-gray-700 hover:border-purple-300">🇵🇱 Polski</a>
-        <a href="bg.html" class="flag-btn flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-2xl shadow-sm text-lg font-semibold text-gray-700 hover:border-purple-300">🇧🇬 Български</a>
-        <a href="fr.html" class="flag-btn flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-2xl shadow-sm text-lg font-semibold text-gray-700 hover:border-purple-300">🇫🇷 Français</a>
-        <a href="it.html" class="flag-btn flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-2xl shadow-sm text-lg font-semibold text-gray-700 hover:border-purple-300">🇮🇹 Italiano</a>
-        <a href="es.html" class="flag-btn flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-2xl shadow-sm text-lg font-semibold text-gray-700 hover:border-purple-300">🇪🇸 Español</a>
-        <a href="de.html" class="flag-btn flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-2xl shadow-sm text-lg font-semibold text-gray-700 hover:border-purple-300">🇩🇪 Deutsch</a>
-        <a href="pt.html" class="flag-btn flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-2xl shadow-sm text-lg font-semibold text-gray-700 hover:border-purple-300">🇧🇷 Português</a>
-      </div>
-      <!-- Row 2 -->
-      <div class="flex flex-wrap justify-center gap-3">
-        <a href="ar.html" class="flag-btn flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-2xl shadow-sm text-lg font-semibold text-gray-700 hover:border-purple-300">🇪🇬 العربية</a>
-        <a href="tr.html" class="flag-btn flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-2xl shadow-sm text-lg font-semibold text-gray-700 hover:border-purple-300">🇹🇷 Türkçe</a>
-        <a href="zh.html" class="flag-btn flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-2xl shadow-sm text-lg font-semibold text-gray-700 hover:border-purple-300">🇨🇳 中文</a>
-        <a href="ja.html" class="flag-btn flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-2xl shadow-sm text-lg font-semibold text-gray-700 hover:border-purple-300">🇯🇵 日本語</a>
-        <a href="uk.html" class="flag-btn flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-2xl shadow-sm text-lg font-semibold text-gray-700 hover:border-purple-300">🇺🇦 Українська</a>
-        <a href="th.html" class="flag-btn flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-2xl shadow-sm text-lg font-semibold text-gray-700 hover:border-purple-300">🇹🇭 ไทย</a>
-        <a href="id.html" class="flag-btn flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-2xl shadow-sm text-lg font-semibold text-gray-700 hover:border-purple-300">🇮🇩 Indonesia</a>
-        <a href="tl.html" class="flag-btn flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-2xl shadow-sm text-lg font-semibold text-gray-700 hover:border-purple-300">🇵🇭 Tagalog</a>
-        <a href="hi.html" class="flag-btn flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-2xl shadow-sm text-lg font-semibold text-gray-700 hover:border-purple-300">🇮🇳 हिन्दी</a>
-        <a href="vi.html" class="flag-btn flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-2xl shadow-sm text-lg font-semibold text-gray-700 hover:border-purple-300">🇻🇳 Tiếng Việt</a>
-        <a href="ko.html" class="flag-btn flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-2xl shadow-sm text-lg font-semibold text-gray-700 hover:border-purple-300">🇰🇷 한국어</a>
-      </div>
-    </div>
-  </div>
+<body style="background-color: #05020a; color: white; font-family: sans-serif; text-align: center; padding-top: 20%;">
+  <h2>Redirecting to the new DeepStem Pro site...</h2>
+  <p>If you are not redirected automatically, <a href="https://deepstem.hermeneialabs.co.uk" style="color: #a855f7;">click here</a>.</p>
 </body>
 </html>
